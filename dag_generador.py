@@ -51,7 +51,7 @@ with DAG(nameDAG, default_args=default_args, schedule_interval=None) as dag:
                                  provide_context=True,
                                  python_callable=create_dag_file,
                                  op_kwargs={'bucket_name': 'us-east1-fwk-vts-scheduler-d904e1ed-bucket',
-                                            'archivo_base': 'dags/moises/dag_prueba.py',
+                                            'archivo_base': df,
                                             'archivo_destino': 'dags/dag_prueba_2.py'})
 
     #######################################################################################
